@@ -279,20 +279,12 @@ body {
     border-color: #0d3461;
 }
 
+/* ===== DATE WRAP (cleaned) ===== */
 .date-wrap {
     position: relative;
 }
 
-.date-wrap .cal-icon {
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #888;
-    font-size: 14px;
-    pointer-events: none;
-}
-
+/* ===== SEARCH WRAP ===== */
 .search-wrap {
     position: relative;
 }

@@ -170,13 +170,14 @@
             <div class="section-box">
                 <div class="section-header">VIEW INCIDENT REPORTS</div>
                 <div class="filters-row">
+                    <!-- Updated Date Range: No emoji, clean native picker -->
                     <div class="filter-group">
                         <label>Date Range</label>
                         <div class="date-wrap">
-                            <input class="filter-input" type="text" value="08/17/2025" style="width:150px;padding-right:28px;" />
-                            <span class="cal-icon">📅</span>
+                            <input class="filter-input" type="date" style="width:150px;" />
                         </div>
                     </div>
+                    <!-- Status Dropdown (Closed removed) -->
                     <div class="filter-group">
                         <label>Status</label>
                         <div class="dropdown-container" id="statusContainer">
@@ -190,10 +191,10 @@
                                 <div class="dropdown-option selected" data-value="Pending">Pending</div>
                                 <div class="dropdown-option" data-value="Investigation">Investigation</div>
                                 <div class="dropdown-option" data-value="Resolved">Resolved</div>
-                                <div class="dropdown-option" data-value="Closed">Closed</div>
                             </div>
                         </div>
                     </div>
+                    <!-- Location Search -->
                     <div class="filter-group">
                         <label>Location</label>
                         <div class="search-wrap">
@@ -201,13 +202,18 @@
                             <span class="search-icon">🔍</span>
                         </div>
                     </div>
+                    <!-- Incident Type Options (Updated) -->
                     <div class="filter-group">
                         <label>Incident Type</label>
                         <select class="filter-select" style="width:160px;">
-                            <option>Incident Type</option>
+                            <option>All Types</option>
+                            <option>Physical Abuse</option>
                             <option>Theft</option>
-                            <option>Assault</option>
-                            <option>Dispute</option>
+                            <option>Domestic Violence</option>
+                            <option>Verbal Abuse</option>
+                            <option>Trespassing</option>
+                            <option>Vandalism</option>
+                            <option>Others</option>
                         </select>
                     </div>
                 </div>
